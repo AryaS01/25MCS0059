@@ -1,0 +1,50 @@
+.card {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.card:hover {
+  background: #f5f5f5;
+}
+
+.card.unread {
+  background: #f9f9f9;
+  border-left: 4px solid #1976d2;
+}
+
+.card.read {
+  opacity: 0.7;
+}
+
+.type-badge {
+  padding: 6px 10px;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  min-width: 80px;
+  text-align: center;
+  height: fit-content;
+}
+
+.content {
+  flex: 1;
+}
+
+.message {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.time {
+  font-size: 12px;
+  color: #999;
+}
